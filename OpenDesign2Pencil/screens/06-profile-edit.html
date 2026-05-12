@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>编辑资料 — 邻声</title>
+  <link rel="stylesheet" href="../assets/screens.css" />
+  <style>
+    .edit-header {
+      padding: 12px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .edit-header a, .edit-header button {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+    .edit-header button { color: var(--accent); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="edit-header" data-od-id="header">
+    <a href="./05-profile.html">取消</a>
+    <span style="font-weight: 600; font-size: 16px;">编辑资料</span>
+    <button>保存</button>
+  </div>
+
+  <main class="content" data-od-id="content" style="padding: 20px;">
+    <section class="stack" data-od-id="form" style="gap: 20px;">
+      <div style="text-align: center;">
+        <img class="avatar" style="width: 80px; height: 80px; margin: 0 auto; position: relative;" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop&crop=face" alt="周牧" />
+        <button style="margin-top: 8px; font-size: 13px; color: var(--accent); background: none; border: 0; cursor: pointer;">更换头像</button>
+      </div>
+
+      <div class="field">
+        <label>昵称</label>
+        <input type="text" value="周牧" />
+      </div>
+
+      <div class="field">
+        <label>职业</label>
+        <input type="text" value="产品设计师" />
+      </div>
+
+      <div class="field">
+        <label>个人简介</label>
+        <textarea>喜欢胶片摄影、城市骑行和精品咖啡。周末常在法租界一带活动，正在学习手冲。如果你也对这些感兴趣，欢迎来聊。</textarea>
+      </div>
+
+      <div class="field">
+        <label>兴趣标签</label>
+        <div class="row" style="flex-wrap: wrap; gap: 6px;">
+          <span class="pill">胶片摄影</span>
+          <span class="pill">城市骑行</span>
+          <span class="pill">手冲咖啡</span>
+          <span class="pill">黑胶</span>
+          <span class="tag" style="cursor: pointer;">+ 添加</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>照片</label>
+        <div class="photo-grid" style="gap: 6px;">
+          <img class="ph-img" style="border-radius: 8px;" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&h=300&fit=crop" alt="照片" />
+          <img class="ph-img" style="border-radius: 8px;" src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=300&h=300&fit=crop" alt="照片" />
+          <img class="ph-img" style="border-radius: 8px;" src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=300&h=300&fit=crop" alt="照片" />
+          <img class="ph-img" style="border-radius: 8px;" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=300&h=300&fit=crop" alt="照片" />
+          <div style="aspect-ratio: 1/1; border-radius: 8px; border: 1.5px dashed var(--border); display: grid; place-items: center; color: var(--muted); font-size: 13px; cursor: pointer;">+ 添加</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

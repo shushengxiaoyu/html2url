@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>发现 — 邻声</title>
+  <link rel="stylesheet" href="../assets/screens.css" />
+</head>
+<body>
+  <main class="content" data-od-id="content">
+    <div class="header" data-od-id="header">
+      <div>
+        <p class="greeting">SHANGHAI · TUESDAY</p>
+        <h1>Nearby</h1>
+      </div>
+      <button class="icon-btn" aria-label="Filter">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h12M3 18h6"/></svg>
+      </button>
+    </div>
+
+    <section class="pad" data-od-id="filters" style="margin-bottom: 4px;">
+      <div class="row" style="overflow-x: auto; padding-bottom: 4px;">
+        <span class="pill">全部</span>
+        <span class="tag">摄影</span>
+        <span class="tag">咖啡</span>
+        <span class="tag">徒步</span>
+        <span class="tag">爵士乐</span>
+        <span class="tag">展览</span>
+      </div>
+    </section>
+
+    <section class="pad" data-od-id="grid" style="margin-top: 6px;">
+      <div class="grid-2" style="gap: 14px;">
+        <a href="./02-match.html" style="text-decoration: none; color: inherit; display: block;">
+        <article class="stack" style="gap: 8px;">
+          <img class="ph-img portrait" style="border-radius: 12px;" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&amp;h=530&amp;fit=crop" alt="林小夏" />
+          <div>
+            <p style="margin: 0; font-family: var(--font-display); font-size: 17px; letter-spacing: -0.01em;">林小夏，26</p>
+            <p style="margin: 4px 0 0; color: var(--muted); font-size: 13px;">摄影师 · 280m</p>
+          </div>
+        </article></a>
+        <article class="stack" style="gap: 8px;">
+          <img class="ph-img portrait" style="border-radius: 12px;" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&amp;h=530&amp;fit=crop" alt="陈默" />
+          <div>
+            <p style="margin: 0; font-family: var(--font-display); font-size: 17px; letter-spacing: -0.01em;">陈默，31</p>
+            <p style="margin: 4px 0 0; color: var(--muted); font-size: 13px;">建筑师 · 450m</p>
+          </div>
+        </article>
+        <article class="stack" style="gap: 8px;">
+          <img class="ph-img portrait" style="border-radius: 12px;" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&amp;h=530&amp;fit=crop" alt="王嘉尔" />
+          <div>
+            <p style="margin: 0; font-family: var(--font-display); font-size: 17px; letter-spacing: -0.01em;">王嘉尔，29</p>
+            <p style="margin: 4px 0 0; color: var(--muted); font-size: 13px;">咖啡师 · 890m</p>
+          </div>
+        </article>
+        <article class="stack" style="gap: 8px;">
+          <img class="ph-img portrait" style="border-radius: 12px;" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&amp;h=530&amp;fit=crop" alt="苏菲" />
+          <div>
+            <p style="margin: 0; font-family: var(--font-display); font-size: 17px; letter-spacing: -0.01em;">苏菲，24</p>
+            <p style="margin: 4px 0 0; color: var(--muted); font-size: 13px;">插画师 · 1.2km</p>
+          </div>
+        </article>
+        <article class="stack" style="gap: 8px;">
+          <img class="ph-img portrait" style="border-radius: 12px;" src="https://images.unsplash.com/photo-1463453091185-61582044d556?w=400&amp;h=530&amp;fit=crop" alt="张远" />
+          <div>
+            <p style="margin: 0; font-family: var(--font-display); font-size: 17px; letter-spacing: -0.01em;">张远，33</p>
+            <p style="margin: 4px 0 0; color: var(--muted); font-size: 13px;">黑胶收藏 · 1.5km</p>
+          </div>
+        </article>
+        <article class="stack" style="gap: 8px;">
+          <img class="ph-img portrait" style="border-radius: 12px;" src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&amp;h=530&amp;fit=crop" alt="李想" />
+          <div>
+            <p style="margin: 0; font-family: var(--font-display); font-size: 17px; letter-spacing: -0.01em;">李想，27</p>
+            <p style="margin: 4px 0 0; color: var(--muted); font-size: 13px;">独立音乐人 · 2.1km</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pad" style="margin-top: 24px; text-align: center;">
+      <p class="meta" style="margin: 0;">已显示附近 24 人</p>
+    </section>
+  </main>
+
+  <nav class="tabbar" style="--tabs: 4;" data-od-id="tabbar">
+    <a class="tab active" href="./01-discover.html">
+      <svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 8v8M8 12h8"/></svg>
+      发现
+    </a>
+    <a class="tab" href="./02-match.html">
+      <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      匹配
+    </a>
+    <a class="tab" href="./03-chat-list.html">
+      <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      消息
+    </a>
+    <a class="tab" href="./05-profile.html">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+      我的
+    </a>
+  </nav>
+</body>
+</html>

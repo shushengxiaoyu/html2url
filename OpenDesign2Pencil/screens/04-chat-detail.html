@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>林小夏 — 邻声</title>
+  <link rel="stylesheet" href="../assets/screens.css" />
+  <style>
+    .chat-header {
+      padding: 12px 20px;
+      display: flex; align-items: center; gap: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .chat-header .back-btn {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: grid; place-items: center;
+      color: var(--fg);
+      cursor: pointer;
+    }
+    .chat-header .back-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.7; }
+    .chat-header .name { font-size: 16px; font-weight: 600; }
+    .chat-header .status { font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="chat-header" data-od-id="header">
+    <a href="./03-chat-list.html" class="back-btn" aria-label="Back">
+      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    </a>
+    <img class="avatar" style="width: 36px; height: 36px;" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&amp;h=200&amp;fit=crop&amp;crop=face" alt="林小夏" />
+    <div>
+      <div class="name">林小夏</div>
+      <div class="status">在线 · 280m</div>
+    </div>
+  </div>
+
+  <main class="content" data-od-id="content" style="padding: 16px 20px 8px;">
+    <div data-od-id="chat">
+      <div style="text-align: center; margin-bottom: 16px;">
+        <span class="meta">今天 14:20</span>
+      </div>
+
+      <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+        <img class="avatar" style="width: 28px; height: 28px; flex-shrink: 0; align-self: flex-end;" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&amp;h=200&amp;fit=crop&amp;crop=face" alt="林小夏" />
+        <div>
+          <div class="chat-bubble left">嗨，看到你的资料里写了常用 Contax T2，我也有一台！</div>
+          <div class="chat-meta">14:20</div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; margin-bottom: 16px;">
+        <div>
+          <div class="chat-bubble right">真的吗？你平时都在哪里冲洗胶卷？</div>
+          <div class="chat-meta" style="text-align: right;">14:25</div>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+        <img class="avatar" style="width: 28px; height: 28px; flex-shrink: 0; align-self: flex-end;" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&amp;h=200&amp;fit=crop&amp;crop=face" alt="林小夏" />
+        <div>
+          <div class="chat-bubble left">我一般在感光实验室，在愚园路那边。他们家的扫描色调很正。</div>
+          <div class="chat-meta">14:28</div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; margin-bottom: 16px;">
+        <div>
+          <div class="chat-bubble right">听起来不错，改天一起去？</div>
+          <div class="chat-meta" style="text-align: right;">14:32 · 已读</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="chat-input" data-od-id="input">
+    <button class="icon-btn" style="border: 0; background: transparent;" aria-label="Add">
+      <svg viewBox="0 0 24 24" style="width: 22px; height: 22px; stroke: var(--muted); fill: none; stroke-width: 1.8;"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+    <input type="text" placeholder="发消息…" />
+    <button class="icon-btn" style="border: 0; background: transparent;" aria-label="Send">
+      <svg viewBox="0 0 24 24" style="width: 22px; height: 22px; stroke: var(--accent); fill: none; stroke-width: 1.8;"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>匹配 — 邻声</title>
+  <link rel="stylesheet" href="../assets/screens.css" />
+  <style>
+    .match-top {
+      padding: 12px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .match-top .back-btn {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: grid; place-items: center;
+      color: var(--fg);
+      cursor: pointer;
+    }
+    .match-top .back-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.7; }
+  </style>
+</head>
+<body>
+  <main class="content" data-od-id="content" style="padding: 0;">
+    <div class="match-top" data-od-id="header">
+      <a href="./01-discover.html" class="back-btn" aria-label="Back">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </a>
+      <span class="meta">林小夏 · 280m</span>
+      <button class="back-btn" aria-label="More" style="visibility: hidden;">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+      </button>
+    </div>
+
+    <section class="pad" data-od-id="card" style="padding-top: 4px;">
+      <div class="match-card">
+        <img class="ph-img portrait" style="border-radius: 0; border: 0; aspect-ratio: 3/4; max-height: 420px;" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=530&fit=crop" alt="林小夏" />
+        <div class="match-info">
+          <p class="match-name">林小夏，26</p>
+          <p style="margin: 6px 0 0; color: var(--muted); font-size: 14px;">自由摄影师 · 上海静安</p>
+          <div class="row" style="margin-top: 12px; flex-wrap: wrap; gap: 6px;">
+            <span class="pill">胶片摄影</span>
+            <span class="tag">咖啡探店</span>
+            <span class="tag">城市徒步</span>
+          </div>
+          <p style="margin: 14px 0 0; font-size: 14px; line-height: 1.55; color: var(--fg);">
+            常用 Contax T2 和 Mamiya 7。周末在永康路一带出没，正在拍一组关于老上海理发店的纪实。想认识同样喜欢扫街的人。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pad" data-od-id="actions" style="padding-top: 8px; padding-bottom: 12px;">
+      <div class="match-actions">
+        <button class="action-btn" aria-label="Pass">
+          <svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+        <button class="action-btn like" aria-label="Like">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+        <button class="action-btn" aria-label="Super Like">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
